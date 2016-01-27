@@ -411,9 +411,8 @@ function woocommerce_payleap_init() {
 				$this->logger = new WC_Logger();
 			}
 
-			if( is_a( $this->logger, 'WC_Logger' ) ) {
-				$this->logger->add( 'payleap', $message );
-			}
+			$this->logger->add('payleap', $message);
+
 		}
 	} // end woocommerce_payleap
 
