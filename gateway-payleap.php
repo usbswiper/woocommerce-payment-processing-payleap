@@ -291,7 +291,7 @@ function woocommerce_payleap_init() {
 					'ExpDate'    => $card_exp_month . $card_exp_year, // Should be MMYY
 					'CVNum'      => $card_csc,
 					'Amount'     => $order->order_total,
-					'ExtData'    => '<CertifiedVendorId>USBSWIPER</CertifiedVendorId>
+					'ExtData'    => '<CertifiedVendorId>USBSWIPER_WOOCOMMERCE</CertifiedVendorId>
 									<TrainingMode>F</TrainingMode>
 									<Invoice>
 										<InvNum>' . $order->get_order_number() . '</InvNum>
