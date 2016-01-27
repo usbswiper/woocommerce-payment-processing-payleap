@@ -3,7 +3,7 @@
  * Plugin Name: Woo Payment Processing - PayLeap
  * Plugin URI: http://woo.usbswiper.com/product/woo-payment-processing-payleap/
  * Description: Process credit cards in WooCommerce with a PayLeap merchant account.
- * Version 0.1.0
+ * Version 1.0.0
  * Author: USBSwiper
  * Author URI: http://woo.usbswiper.com
  *
@@ -307,7 +307,7 @@ function woocommerce_payleap_init() {
 											<Email>' . $order->billing_email . '</Email>
 											<Phone>' . $order->billing_phone . '</Phone>
 										</BillTo>
-										<Description>' . sprintf( __( '%s - Order %s', 'wp_payleap' ), esc_html( get_bloginfo( 'name' ) ), $order->get_order_number() ) . '</Description>
+										<Description>' . sprintf( __( '%s - Order %s', 'wc_usbswiper_payleap' ), esc_html( get_bloginfo( 'name' ) ), $order->get_order_number() ) . '</Description>
 									</Invoice>',
 					'PNRef'      => '',
 					'MagData'    => ''
@@ -315,11 +315,11 @@ function woocommerce_payleap_init() {
 
 				// Handle response
 				if ( is_wp_error( $response ) ) {
-    				throw new Exception( __('There was a problem connecting to the payment gateway.', 'wp_payleap') );
+    				throw new Exception( __('There was a problem connecting to the payment gateway.', 'wc_usbswiper_payleap') );
 				}
 
     			if( empty($response['body']) ) {
-    				throw new Exception( __('Empty response from payment gateway.', 'wp_payleap') );
+    				throw new Exception( __('Empty response from payment gateway.', 'wc_usbswiper_payleap') );
     			}
 
     			$parsed_response = simplexml_load_string( $response['body'] );
