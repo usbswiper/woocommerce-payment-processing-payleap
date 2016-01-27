@@ -395,6 +395,9 @@ function woocommerce_payleap_init() {
 				'user-agent' => 'WooCommerce ' . $woocommerce->version
 			) );
 
+			$this->log('Request: ' . print_r($request,true));
+			$this->log('Response: ' . print_r($response,true));
+
 			return $response;
 
 		}
