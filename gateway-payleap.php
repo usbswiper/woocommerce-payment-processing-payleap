@@ -52,6 +52,7 @@ function woocommerce_payleap_init() {
 			$this->description = $this->settings['description'];
 			$this->enabled     = $this->settings['enabled'];
 			$this->testmode    = $this->settings['testmode'];
+			$this->debug	   = $this->settings['debug'];
 
 			// Setup API calls based on testmode status
 			$this->api_url      = $this->testmode == 'no' ? $this->liveurl : $this->testurl;
@@ -188,6 +189,13 @@ function woocommerce_payleap_init() {
 					'title'       => __( 'Test API Transaction Key', 'wc_usbswiper_payleap' ),
 					'type'        => 'password',
 					'default'     => ''
+				),
+				'debug' => array(
+					'title'       => __( 'Debug Log', 'wc_usbswiper_payleap' ),
+					'label'       => __( 'Enable Logging', 'wc_usbswiper_payleap' ),
+					'type'        => 'checkbox',
+					'description' => __( 'Log PayLeap events inside <code>/wp-content/uploads/wc-logs/payleap-{tag}.log</code>', 'wc_usbswiper_payleap'),
+					'default'     => 'no'
 				),
 			);
 
@@ -392,7 +400,7 @@ function woocommerce_payleap_init() {
 		}
 
 		function log( $message = '' ) {
-			if( 'no' == $this->testmode ) {
+			if( 'no' == $this->debug ) {
 				return false;
 			}
 
