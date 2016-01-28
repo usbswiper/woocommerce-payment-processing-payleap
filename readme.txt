@@ -17,12 +17,12 @@ Process credit card payments on your WooCommerce website with a PayLeap merchant
 Scans all site content and returns a report of any insecure PayPal buttons that are found as well as a recommendation on securing your PayPal buttons.
 
 = Localization =
-Woo Payment Processing - PayLeap was developed with localization in mind and is ready for translation.
+Woo Payments by PayLeap was developed with localization in mind and is ready for translation.
 
 If you're interested in helping translate please [let us know](http://woo.usbswiper.com/contact/)!
 
 = Get Involved =
-Developers can contribute to the source code on the [Woo Payment Processing - PayLeap Git repository on GitHub](https://github.com/usbswiper/woocommerce-payment-processing-payleap).
+Developers can contribute to the source code on the [Woo Payments by PayLeap Git repository on GitHub](https://github.com/usbswiper/woocommerce-payment-processing-payleap).
 
 == Installation ==
 
@@ -30,7 +30,7 @@ Developers can contribute to the source code on the [Woo Payment Processing - Pa
 
 Automatic installation is the easiest option as WordPress handles the file transfers itself and you don't need to leave your web browser. To do an automatic install, log in to your WordPress dashboard, navigate to the Plugins menu and click Add New.
 
-In the search field type Woo Payment Processing PayLeap and click Search Plugins. Once you've found our plugin you can view details about it such as the the rating and description. Most importantly, of course, you can install it by simply clicking Install Now.
+In the search field type Woo Payments PayLeap and click Search Plugins. Once you've found our plugin you can view details about it such as the the rating and description. Most importantly, of course, you can install it by simply clicking Install Now.
 
 = Manual Installation =
 
