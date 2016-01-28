@@ -1,7 +1,7 @@
 <?php
 /**
  * @wordpress-plugin
- * Plugin Name: 		Woo Payment Processing - PayLeap
+ * Plugin Name: 		Woo Payments by PayLeap
  * Plugin URI: 			http://woo.usbswiper.com/product/woo-payment-processing-payleap/
  * Description: 		Process credit cards in WooCommerce with a PayLeap merchant account.
  * Version: 			1.0.0
