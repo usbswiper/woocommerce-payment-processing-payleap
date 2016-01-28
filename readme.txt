@@ -1,4 +1,4 @@
-=== Woo Payments by PayLeap ===
+=== Woo Payments with PayLeap ===
 Contributors: usbswiper
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BBNLSNXGKMSZW
 Tags: woocommerce, payleap, payment processing, credit card processing
@@ -14,15 +14,15 @@ Process credit card payments on your WooCommerce website with a PayLeap merchant
 
 = Introduction =
 
-Scans all site content and returns a report of any insecure PayPal buttons that are found as well as a recommendation on securing your PayPal buttons.
+Scans all site content and returns a report of any insecure PayLeap buttons that are found as well as a recommendation on securing your PayLeap buttons.
 
 = Localization =
-Woo Payments by PayLeap was developed with localization in mind and is ready for translation.
+Woo Payments with PayLeap was developed with localization in mind and is ready for translation.
 
 If you're interested in helping translate please [let us know](http://woo.usbswiper.com/contact/)!
 
 = Get Involved =
-Developers can contribute to the source code on the [Woo Payments by PayLeap Git repository on GitHub](https://github.com/usbswiper/woocommerce-payment-processing-payleap).
+Developers can contribute to the source code on the [Woo Payments with PayLeap Git repository on GitHub](https://github.com/usbswiper/woocommerce-payment-processing-payleap).
 
 == Installation ==
 
