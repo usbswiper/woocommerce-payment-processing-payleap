@@ -46,8 +46,14 @@ In the search field type Woo Payment Processing PayLeap and click Search Plugins
 = Where can I find my PayLeap API credentials? =
 
 * Login to your PayLeap merchant account.
+* Click Preferences in the menu bar on the left.
+* Click the Create Transaction Key link under the Preferences section.
+* Make note of your App Login ID.
+* Click the Submit button to create a new transaction key.
+* Make note of your new transaction key.
+* Proceed to the plugin settings to enter the values accordingly.
 
 == Changelog ==
 
-= 0.1.0 =
-* Initial beta release.
+= 1.0.0 =
+* Initial stable release.
