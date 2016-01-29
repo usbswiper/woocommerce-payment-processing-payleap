@@ -1,7 +1,7 @@
 === Woo Payments with PayLeap ===
 Contributors: usbswiper
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BBNLSNXGKMSZW
-Tags: woocommerce, payleap, payment processing, credit card processing
+Tags: ecommerce, credit card processing, online payments, payleap, payment, payment gateway, woocommerce, woothemes, payment processing, process credit cards
 Requires at least: 3.8
 Tested up to: 4.4.1
 Stable tag: 1.0.0
@@ -14,7 +14,18 @@ Process credit card payments on your WooCommerce website with a PayLeap merchant
 
 = Introduction =
 
-Scans all site content and returns a report of any insecure PayLeap buttons that are found as well as a recommendation on securing your PayLeap buttons.
+WooCommerce PayLeap Payment Gateway allows you to accept payments in your Woocommerce store. It authorizes credit card payments and processes them securely with your PayLeap Merchant Account.
+
+= Plugin Functionality =
+
+* Easy to install and configure
+* Compatible with WordPress/Woocommerce plugins
+* You don’t need any extra plugins or scripts to process the Transaction
+* Accepts all major credit cards
+
+= Merchant Account Requirement =
+
+This Plugin requires that you have a PayLeap Merchant Account to accept credit card and debit card payments. If you do not have a PayLeap Account, please contact us at (224) 677-0283 x 2.
 
 = Localization =
 Woo Payments with PayLeap was developed with localization in mind and is ready for translation.
