@@ -424,6 +424,22 @@ function woocommerce_payleap_init() {
 		$methods[] = 'WC_Gateway_USBSwiper_PayLeap';
 		return $methods;
 	}
+        
+        function plugin_action_links($actions, $plugin_file, $plugin_data, $context) {
+            $custom_actions = array(
+                'configure' => sprintf('<a href="%s">%s</a>', admin_url('admin.php?page=wc-settings&tab=checkout&section=wc_gateway_usbswiper_payleap'), __('Configure', 'wc_usbswiper_payleap')),
+                'docs' => sprintf('<a href="%s" target="_blank">%s</a>', 'http://woo.usbswiper.com/category/documentation/woocommerce-payment-processing-payleap/', __('Docs', 'wc_usbswiper_payleap')),
+                'support' => sprintf('<a href="%s" target="_blank">%s</a>', 'https://wordpress.org/support/plugin/woo-payment-processing-payleap', __('Support', 'wc_usbswiper_payleap')),
+                'review' => sprintf('<a href="%s" target="_blank">%s</a>', 'https://wordpress.org/support/view/plugin-reviews/woo-payment-processing-payleap', __('Write a Review', 'wc_usbswiper_payleap')),
+            );
+
+            // add the links to the front of the actions list
+            return array_merge($custom_actions, $actions);
+        }
 
 	add_filter('woocommerce_payment_gateways', 'add_payleap_gateway' );
+        
+        $basename = plugin_basename( __FILE__ );
+        $prefix = is_network_admin() ? 'network_admin_' : '';
+        add_filter( "{$prefix}plugin_action_links_$basename", 'plugin_action_links', 10, 4);
 }
